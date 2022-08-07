@@ -1,0 +1,25 @@
+in package.json
+{	
+	...
+		"package": "MAJOR.MINOR.PATCH"
+	... 
+}
+The MAJOR version should increment when you make incompatible API changes. The MINOR version should increment when you add functionality in a backwards-compatible manner. The PATCH version should increment when you make backwards-compatible bug fixes. This means that PATCHes are bug fixes and MINORs add new features but neither of them break what worked before. Finally, MAJORs add changes that won’t work with earlier versions.
+
+{
+	"package": "~2.10.2" ;;; it will update ~2.10.x
+	~ :: to allow npm depedency to update to the latest PATCH version
+
+	"package": "^2.10.2" ;;; it will update ^2.x.x
+	^ :: to allow npm depedency to update to the latest MINOR
+}
+
+URL (unified resource locator) = a string of characters that is directed to an address.
+	used to locate resources on the web.
+
+URI (unified resource identifier) =  is also a string of characters that identifies a resource on the web either by using location, name or both. It allows uniform identification of the resources. 
+
+A URI is additionally grouped as a locator, a name or both which suggests it can describe a URL, URN or both. The term identifier within the URI refers to the prominence of the resources, despite the technique used.
+
+https://www.geeksforgeeks.org/difference-between-url-and-uri/
+
